@@ -1,19 +1,16 @@
 import Image from "next/image";
 import Link from "next/link";
-
-export default function Card() {
+export default function CardProfile() {
 	return (
 		<>
 			<div className="bg-white shadow rounded-lg p-6">
-				<div className="flex flex-col items-center ">
+				<div className="flex flex-col items-center">
 					<Image
-						alt="my-image"
-						src={
-							"https://images.unsplash.com/photo-1690575539214-eb0ade6cdd4d?q=80&w=3927&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-						}
+						src="/yalla.jpg"
+						alt={"myImage"}
 						className="w-32 h-32 bg-gray-300 rounded-full mb-4 shrink-0"
-						width={100}
-						height={100}
+						width={50}
+						height={50}
 					></Image>
 					<h1 className="text-xl font-bold">Mostafa Hassan</h1>
 					<p className="text-gray-700">frontend Developer</p>
@@ -46,7 +43,6 @@ export default function Card() {
 					</ul>
 				</div>
 			</div>
-			;
 		</>
 	);
 }
